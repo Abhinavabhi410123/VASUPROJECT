@@ -1,0 +1,40 @@
+<body style="background-color: aquamarine;">    
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="fromDestination">ID:</label>
+    <input id="fromDestination" type="text" formControlName="fromDestination" required />
+  </div>
+    <div>
+      <label for="fromDestination">From Destination:</label>
+      <input id="fromDestination" type="text" formControlName="fromDestination" required />
+    </div>
+  
+    <div>
+      <label for="toDestination">To Destination:</label>
+      <input id="toDestination" type="text" formControlName="toDestination" required />
+    </div>
+  
+    <div>
+      <label for="price">Price:</label>
+      <input id="price" type="number" formControlName="price" required />
+    </div>
+  
+    <div>
+      <label for="date">Date:</label>
+      <input id="date" type="date" formControlName="date" required />
+    </div>
+  
+    <div>
+      <label for="terms">
+        <input id="terms" type="checkbox" formControlName="terms" />
+        I accept the terms and conditions
+      </label>
+    </div>
+  
+    <button type="submit" [disabled]="!registrationForm.valid">Submit</button>
+    &nbsp;&nbsp;
+    <button type="button" class="btn btn-danger" style="width: 450px;" (click)="update(registrationForm)">Update</button>
+
+  </form>
+</body>
+  

@@ -1,0 +1,183 @@
+/* General form styling */
+form {
+    max-width: 500px;
+    margin:  auto;
+    padding: 20px;
+    background-color: #e9981f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #7ff80e;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Submit button styling */
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Error message styling */
+  .ng-invalid.ng-touched input {
+    border-color: red;
+  }
+  
+  .ng-invalid.ng-touched label {
+    color: red;
+  }
+  
+  /* Additional styling */
+  input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+  
+  form div:last-child {
+    margin-top: 20px;
+  }
+  /* General Table Styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #f8f9fa; /* Light background for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures rounded corners on borders */
+  }
+  
+  /* Table Header */
+  thead {
+    background-color: #007bff; /* Primary color for the header */
+    color: white; /* White text for contrast */
+  }
+  
+  thead th {
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    text-align: center;
+  }
+  
+  /* Table Body Rows */
+  tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light gray for odd rows */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+  }
+  
+  tbody tr:hover {
+    background-color: #e9ecef; /* Subtle hover effect */
+  }
+  
+  /* Table Data */
+  td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #343a40; /* Dark color for text */
+    border-bottom: 1px solid #ddd; /* Light bottom border */
+  }
+  
+  /* First Column (Index) */
+  td:first-child {
+    font-weight: bold;
+    color: #007bff; /* Same color as the header */
+  }
+  
+  /* Price Column */
+  td:nth-child(3) {
+    color: #28a745; /* Green color for price */
+    font-weight: bold;
+  }
+  
+  /* Difficulty Level Styling */
+  td:nth-child(4) {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  td:nth-child(4):before {
+    content: '\25CF'; /* Adds a colored bullet before text */
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  td:nth-child(4)[data-difficulty="Easy"]:before {
+    color: #28a745; /* Green for Easy */
+  }
+  
+  td:nth-child(4)[data-difficulty="Moderate"]:before {
+    color: #ffc107; /* Yellow for Moderate */
+  }
+  
+  td:nth-child(4)[data-difficulty="Hard"]:before {
+    color: #dc3545; /* Red for Hard */
+  }
+  
+  /* Table Footer */
+  tfoot {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  tfoot td {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  

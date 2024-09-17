@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Sofadi+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image with Text and Button</title>
+  <style>
+      
+    .image-container {
+      position: relative; 
+      height: 100vh;  
+      width: 100vw;  
+      background-image: url('../../../assets/images/bgimage.jpg');
+      background-size: cover;  
+      background-position: center;  
+      background-repeat: no-repeat;  
+      text-align: center;  
+      color: white;  
+      font-family: Arial, sans-serif;
+    }
+
+   
+    .image-text {
+      position: absolute;
+      top: 40%; 
+      left: 350px;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      font-weight: bold;
+      color: black;
+      font-family: "Fascinate Inline";
+    }
+
+    
+    .image-button {
+      position: absolute;
+      top: 55%;  
+      left: 350px;
+      transform: translate(-50%, -50%);
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+   
+    .image-button:hover {
+      background-color: #e64a19;  
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+   
+    <div class="image-text"><h1>Explore the World</h1>
+                            <h2>Check out our packages</h2>
+                            <h3>Designed by experts</h3>
+    </div>
+
+    
+    <a routerLink="/packages"><button class="image-button" >View Packages</button></a>
+  </div>
+
+</body>
+</html>
+
+    
+   
+
+
