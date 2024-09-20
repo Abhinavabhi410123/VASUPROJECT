@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BookingComponent } from './components/booking/booking.component';
 import { MybookingsComponent } from './components/mybookings/mybookings.component';
 import { PackagesComponent } from './components/packages/packages.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -31,6 +32,7 @@ import { PackagesComponent } from './components/packages/packages.component';
     BookingComponent,
     MybookingsComponent,
     PackagesComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

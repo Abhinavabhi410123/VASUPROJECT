@@ -1,105 +1,176 @@
-.about-us-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
+/* General Styles */
+body {
+  background-color: #FFFFFF; /* White background for a clean look */
+  color: #FFA500; /* Orange for text */
+  font-family: 'Lato', sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
   
-  .hero-section {
     text-align: center;
-    padding: 40px 0;
-    background-color: #f0f8ff;
-  }
+    padding: 60px 0;
+    background: linear-gradient(135deg, #00abe1 50%, #ffa50012 50%);
+    color: #FFFFFF;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  color: #FFFFFF; /* White for headings */
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #FFFFFF; /* White text for readability */
+}
+
+.hero-section img {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
   
-  .hero-section img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .our-mission {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 0;
-  }
-  
-  .our-mission .content {
-    width: 50%;
-  }
-  
-  .our-mission img {
-    width: 45%;
-    border-radius: 10px;
-  }
-  
-  .why-choose-us {
-    text-align: center;
-    padding: 40px 0;
-  }
-  
-  .features {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .feature-item {
-    text-align: center;
-  }
-  
-  .feature-item img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .our-values {
-    padding: 40px 0;
-  }
-  
-  .our-values ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .our-values li {
-    margin: 10px 0;
-    font-size: 18px;
-  }
-  
-  .our-team {
-    text-align: center;
-    padding: 40px 0;
-  }
-  
-  .team-members {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .team-member {
-    text-align: center;
-  }
-  
-  .team-member img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .testimonials {
-    text-align: center;
-    padding: 40px 0;
-  }
-  
-  .testimonials blockquote {
-    font-style: italic;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f8ff;
-    border-left: 5px solid #008080;
-  }
-  
-  .testimonials cite {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
+}
+
+/* Our Mission Section */
+.our-mission {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  background-color: rgba(195, 192, 192, 0.945); /* Aquamarine background */
+}
+
+.our-mission .content {
+  width: 50%;
+  color: black; /* Orange text */
+}
+
+.our-mission img {
+  width: 50%;
+  border-radius: 10px;
+   /* Orange border */
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 40px 0;
+  background: linear-gradient(135deg, #FFFFFF 50%, #fff3cd 50%); /* Alternating gradient background */
+  color: black; /* Orange text */
+}
+
+.why-choose-us h2 {
+  color: black; /* Orange for headings */
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.feature-item {
+  text-align: center;
+  background-color: #00abe1; /* Aquamarine background for feature items */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.feature-item img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #FFA500; /* Orange border */
+}
+
+.feature-item h3 {
+  color: black; /* Orange for headings */
+}
+
+.feature-item p {
+  color: #FFFFFF; /* White for readability */
+}
+
+/* Our Values Section */
+.our-values {
+  padding: 40px 0;
+  background-color: #FFFFFF; /* White background */
+  color: black; /* Orange text */
+}
+
+.our-values h2 {
+  color: black; /* Orange for headings */
+}
+
+.our-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.our-values li {
+  margin: 10px 0;
+  font-size: 18px;
+  color:black; 
+}
+
+
+.our-team {
+  text-align: center;
+  padding: 40px 0;
+  background: linear-gradient(135deg, #3ea7fbeb 50%, #FFFFFF 50%); /* Alternating gradient background */
+  color: black; 
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #FFA500; /* Orange border for images */
+}
+
+.team-member h3 {
+  color: black; /* Orange for names */
+}
+
+.team-member p {
+  color:black; /* Orange for titles */
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 40px 0;
+  background: linear-gradient(135deg, #7FFFD4 50%, #FFFFFF 50%); /* Alternating gradient background */
+  color: black; /* Orange text */
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  margin: 0;
+  padding: 20px;
+  background-color: #00abe1; /* Orange background for testimonials */
+  color: #FFFFFF; /* White text for contrast */
+  border-left: 5px solid #7FFFD4; /* Aquamarine border for emphasis */
+  border-radius: 10px;
+}
+
+.testimonials cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white; /* Orange for citation text */
+}
+
+/* Footer (optional) */
+footer {
+  background-color: #FFA500; /* Orange footer */
+  color: #FFFFFF; /* White text */
+  text-align: center;
+  padding: 20px;
+}

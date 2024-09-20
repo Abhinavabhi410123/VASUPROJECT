@@ -1,0 +1,50 @@
+.footer {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer .col-md-4 {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .footer h5 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .col-md-4 a {
+    font-size: 1rem;
+  }
+  

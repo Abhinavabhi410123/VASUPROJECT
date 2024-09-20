@@ -47,7 +47,6 @@ updatedetails(data){
     if(res2){
       alert("updated sucessfully")
       this.ngOnInit()
-      this.remo=false
     }
     else{
       alert("update not sucessfull")
